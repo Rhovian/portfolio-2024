@@ -8,8 +8,10 @@
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-    "lint": "prettier --check . && eslint .",
+    "lint": "eslint --fix .",
     "format": "prettier --write .",
+    "lint:check": "eslint .",
+    "format:check": "prettier --check .",
     "prepare": "husky install"
   },
   "devDependencies": {
@@ -38,8 +40,13 @@
     "vite": "^5.0.3"
   },
   "lint-staged": {
-    "*.{js,ts,svelte}": ["prettier --write", "eslint --fix"],
-    "*.{css,scss,md}": ["prettier --write"]
+    "*.{js,ts,svelte}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.{css,scss,md}": [
+      "prettier --write"
+    ]
   },
   "type": "module"
 }
