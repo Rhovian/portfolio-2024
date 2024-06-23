@@ -1,0 +1,35 @@
+# Dependency directories
+node_modules/
+
+# Build output
+/build
+/.svelte-kit
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# OS files
+.DS_Store
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Optional: if you're using pnpm
+pnpm-debug.log*
+
+# Optional: SvelteKit service worker
+/static/workbox-*.js
+/static/workbox-*.js.map

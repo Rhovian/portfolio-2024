@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-zinc-950;
+  }
+}
+
+@layer utilities {
+  .text-gradient-gold {
+    background-image: radial-gradient(circle, #d4bf79 64%, #a28834 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+  }
+}
