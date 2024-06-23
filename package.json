@@ -12,6 +12,8 @@
     "format": "prettier --write .",
     "lint:check": "eslint .",
     "format:check": "prettier --check .",
+    "yaml:check": "npx yaml-lint .github/**/*.yaml",
+    "ci:check": "pnpm run format:check && pnpm run lint:check && pnpm run yaml:check",
     "prepare": "husky install"
   },
   "devDependencies": {
@@ -37,14 +39,15 @@
     "tslib": "^2.4.1",
     "typescript": "^5.0.0",
     "typescript-eslint": "^8.0.0-alpha.20",
-    "vite": "^5.0.3"
+    "vite": "^5.0.3",
+    "yaml-lint": "^1.7.0"
   },
   "lint-staged": {
     "*.{js,ts,svelte}": [
       "prettier --write",
       "eslint --fix"
     ],
-    "*.{css,scss,md}": [
+    "*.{md,yml,yaml}": [
       "prettier --write"
     ]
   },
