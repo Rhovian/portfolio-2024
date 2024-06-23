@@ -1,3 +1,3 @@
-@Rhovian portfolio
-
-![Rhovian Coat of Arms](static/coa.png "Coat of Arms")
+<p align="center">
+  <img src="static/coa.png" alt="Alt text" width="300"/>
+</p>
